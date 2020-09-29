@@ -16,10 +16,13 @@ function App() {
   });
 
   async function handleToken(token) {
-    const res = await axios.post("http://localhost:8080/checkout", {
-      token,
-      product,
-    });
+    const res = await axios.post(
+      "https://intergrated-stripe-app-2.herokuapp.com/checkout",
+      {
+        token,
+        product,
+      }
+    );
     const { status } = res.data;
 
     if (status === "success") {
