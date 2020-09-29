@@ -1,0 +1,22 @@
+{
+  "name": "ryan-node-stripe-checkout",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js localhost 8080"
+  },
+  "dependencies": {
+    "cors": "2.8.4",
+    "dotenv": "^8.2.0",
+    "express": "4.16.4",
+    "stripe": "6.12.1",
+    "uuid": "3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  },
+  "keywords": []
+}
